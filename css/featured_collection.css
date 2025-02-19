@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --Button-Primary-BG: #827c6c;
+  font-size: 62.5%;
+}
+.featured_collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 35px 164px;
+  height: 922px;
+  background-color: #ffffff;
+
+  
+}
+/* left */
+.featured_collection__left {
+  width: 50%;
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(221, 212, 197, 0) 0%, #8e887e 100%);
+  height: 852px;
+}
+.featured_collection__left__img {
+  background-image: url("/img/bike.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100% * 687 / 782);
+  height: 667px;
+  position: absolute;
+  top: 185px;
+  left: 59px;
+}
+.featured_collection__left__feature {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: calc(21.3 / 15);
+  letter-spacing: 0%;
+  width: 125px;
+  height: 21px;
+  position: absolute;
+  top: 39px;
+  left: 40px;
+  opacity: 0.4;
+  color: var(--Text, #1e1e1e);
+}
+.featured_collection__left__super {
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 37.2px;
+  letter-spacing: -3%;
+  width: 88px;
+  height: 37px;
+  top: 630px;
+  left: 43px;
+  color: #ffffff;
+}
+.featured_collection__left__smart {
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 24px;
+  letter-spacing: -7%;
+  width: 538px;
+  height: 24px;
+  top: 731px;
+  left: 37px;
+  color: #ffffff;
+}
+
+/* right */
+.featured_collection__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+.featured_collection__right--top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f7f7f8;
+  max-height: 371px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 45px 50px 43px 51px;
+  gap: 109px;
+}
+.featured_collection__right--top h6 {
+  max-width: 544px;
+  line-height: 74px;
+  left: 119px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 1.2;
+  letter-spacing: -3%;
+  text-align: center;
+}
+.featured_collection__right-blocks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+}
+.featured_collection__group-items {
+  position: relative;
+  max-width: 163px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featured_collection__group-items:nth-child(2)::after,
+.featured_collection__group-items:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  height: calc(100% + 38px);
+  width: 1px;
+  top: 50%;
+  background-color: #0000001c;
+}
+.featured_collection__group-items:nth-child(2)::after {
+  right: -48px;
+  transform: translate(-50%, -50%);
+}
+.featured_collection__group-items:nth-child(2)::before {
+  left: -48px;
+  transform: translate(50%, -50%);
+}
+.featured_collection__group-items img {
+  width: 48px;
+  height: 48px;
+}
+.featured_collection__group-items strong {
+  margin-top: 8px;
+  max-width: 163px;
+  max-height: 44px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--Text, #1e1e1e);
+}
+
+.featured_collection__right--bottom {
+  position: relative;
+  width: 100%;
+  height: 454px;
+  border-radius: 10px;
+}
+.featured_collection__right--bottom img {
+  width: 100%;
+  height: 454px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.featured_collection__right--bottom button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 124px;
+  height: 48px;
+  border-radius: 56px;
+  border: none;
+  color: #ffffff;
+  background-color: var(--Button-Primary-BG, #827c6c);
+  font-family: Be Vietnam Pro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20.24 / 16);
+  cursor: pointer;
+}
+
+.featured_collection__right--bottom button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s;
+}
+
+
+
+/* Responsive mobile*/
+
+@media (max-width: 768px) {
+  .featured_collection {
+    flex-direction: column;
+    padding: 0;
+    height: unset;
+  }
+
+  .featured_collection .left {
+    width: 100%;
+  }
+
+  .featured_collection .right {
+    width: 100%;
+  }
+
+  .featured_collection .left .super {
+    font-size: 25px;
+  }
+  .featured_collection .left .smart {
+    font-size: 140px;
+  }
+  .featured_collection .right_top {
+    max-height: unset;
+    padding: 2.4rem;
+    gap: 5rem;
+  }
+
+  .featured_collection .blocks {
+    flex-direction: column;
+  }
+  .featured_collection .group-items:nth-child(2)::before {
+    left: unset;
+    transform: translate(50%, -50%) rotate(90deg);
+    top: -50%;
+  }
+
+  .featured_collection .group-items:nth-child(2)::after {
+    right: unset;
+    transform: translate(-50%, -50%) rotate(90deg);
+    top: 150%;
+  }
+}
+

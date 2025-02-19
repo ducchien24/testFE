@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --Button-Primary-BG: #827c6c;
+  font-size: 62.5%;
+}
+.collapsible-content-4{
+  padding: 50px 0px;
+}
+.collapsible-content-4__container{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  padding: 76px 59px;
+}
+/* collapsible-content-4__column--1 */
+ .collapsible-content-4__column--1 {
+  width: 598px;
+  padding-right: 99px;
+}
+.collapsible-content-4__subtitle--1 {
+  margin-top: 7.3rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: rgba(64, 44, 34, 0.7);
+}
+.collapsible-content-4__title--1 {
+  padding: 2rem 0 3rem;
+  font-family: "Optima";
+  font-weight: 400;
+  font-size: 6.3rem;
+  line-height: 1.06;
+  letter-spacing: -2%;
+  color: var(--Text, #402c22);
+}
+.collapsible-content-4__description {
+  padding: 2rem 0;
+}
+.collapsible-content-4__content{
+  padding-right: 2rem;
+}
+.collapsible-content-4__content div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 452px;
+  height: 27px;
+  font-family: "Optima nova LT Pro";
+  font-size: 22px;
+  line-height: 1.22;
+  letter-spacing: -2%;
+  padding: 20px 0px;
+  height: 27px;
+  color: var(--Text, #402c22);
+}
+
+.collapsible-content-4__content div:not(:last-child) {
+  border-bottom: 1px solid #0000001c;
+}
+
+.collapsible-content-4__content div:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.collapsible-content-4__content p {
+  display: none;
+  width: 403px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  opacity: 0.8;
+}
+/* column2 */
+.collapsible-content-4__column--2 {
+  width: 764px;
+  height: 851px;
+  margin-right: 16px;
+}
+.collapsible-content-4__column--2 img {
+  width: 764px;
+  height: 851px;
+}
+/* column3 */
+.collapsible-content-4__column--3 {
+  width: 424px;
+  height: 551px;
+}
+.collapsible-content-4__column--3 img {
+  width: 424px;
+  height: calc(100% * 551 / 553);
+}
+
+/* Res */
+
+/* Res */
+
+@media (max-width: 768px) {
+  .collapsible-content-4__column--2,.collapsible-content-4__column--3 {
+    width: 100%;
+    height: auto;
+  margin-right: unset;
+  }
+  .collapsible-content-4__column--2 img,.collapsible-content-4__column--3 img {
+    width: 100%;
+    height: auto;
+  }
+}
